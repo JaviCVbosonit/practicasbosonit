@@ -1,0 +1,156 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(26, 40, 40);
+  margin: 0px;
+  padding: 0px;
+}
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  padding-top: 10px;
+  z-index: 1;
+  background-color: #ce2711;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+p {
+  color: #ce2711;
+}
+
+#navbar {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+  text-align: center;
+  font-size: 2em;
+}
+
+#navbar a {
+  margin: 4vw;
+  text-decoration: inherit;
+  color: black;
+}
+.nav-link:hover {
+  background-color: #2b303a;
+}
+main section {
+  margin-top: 10vh;
+  height: 50px;
+}
+
+h1 {
+  color: aliceblue;
+  padding-top: 40px;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+#welcome-section {
+  min-height: 100px;
+  text-align: center;
+}
+.welcome-name {
+  font-size: 3em;
+}
+
+#projects {
+  background-color: #28666e;
+  padding-bottom: 20px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+}
+
+#projects h2 {
+  margin-bottom: 30px;
+}
+
+#projects-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 6vw;
+  grid-row-gap: 6vh;
+  max-width: 900px;
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
+#projects img {
+  width: 100%;
+  height: 180px;
+}
+.project-title img {
+  object-fit: cover;
+}
+#projects-content a {
+  display: grid;
+  grid-template-rows: 1fr 35px;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  border-style: solid;
+  width: 300px;
+  height: 210px;
+  text-decoration: none;
+  color: black;
+  border-width: 2px;
+  border-style: outset;
+  border-color: rgb(10, 10, 10);
+  background-color: #ce2711;
+}
+
+#contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 280px;
+}
+#contacts h1 {
+  margin-top: 50px;
+  margin-bottom: 0px;
+  color: white;
+  padding: 0%;
+}
+#contacts h2 {
+  margin-top: 50px;
+  margin-bottom: 0px;
+  color: white;
+}
+#contacts a {
+  display: inline-block;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border: solid;
+  border-width: 2px;
+  border-radius: 50%;
+  text-decoration: none;
+  color: black;
+  background-color: rgb(142, 218, 239);
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-bottom: 2vw;
+}
+
+header,
+.main-section,
+footer {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+@media (max-width: 570px) {
+  #projects-content {
+    grid-template-columns: 1fr;
+  }
+}
